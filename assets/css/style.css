@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Oswald:wght@300;400;500;600;700&display=swap');
+
+:root{
+  --primary_color: #0771b9;
+  --secondary_color: #5bc5f3;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Open Sans', sans-serif;
+  
+}
+a{
+  text-decoration: none;
+}
+
+h1, h2, h3, h4{
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+
+/* ----------------- Welcome Part ------------ */
+.welcome-part{
+  background-color: var(--primary_color);
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+.welcome-icon a{
+  color: #fff;
+}
+.welcome-icon a:hover{
+  color: #353535;
+}
+
+
+/* --------------------- Navigation Part ----------------------- */
+.nav-item a{
+  color: #000;
+}
+.nav-item a:hover{
+  color: var(--primary_color);
+}
+
+
+/* ------------------------- Hero Part --------------------------- */
+
+.hero-part{
+ background: url(../images/hero.jpg) no-repeat center;
+ background-size: cover;
+}
+.hero-overlay{
+  background-color: rgba(0, 0, 0, .6);
+  padding: 90px 0;
+}
+.hero-content h1{
+  font-size: 46px;
+}
+.hero-content h1:nth-child(1){
+  font-weight: 400;
+}
+.hero-content p{
+  padding: 15px 0 35px;
+  line-height: 30px;
+}
+.hero-btn a{
+  background-color: var(--primary_color);
+  font-family: 'Oswald', serif;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+  border: 2px solid transparent;
+  transition: .4s;
+}
+.hero-btn a:nth-child(1){
+  margin-right: 16px;
+}
+.hero-btn a:hover{
+  background: transparent;
+  border: 2px solid white;
+}
+
+
+/* ---------------- About Part ---------------- */
+
+
+/* ---------------------------------------------------------------------- */
+
+.head3{
+  padding: 60px 0 40px;
+}
+
+.head3 h3{
+  line-height: 0;
+}
+/* ---------------------------------------------------------------------- */
+
+.about-content p{
+  line-height: 30px;
+  color: #555;
+}
+
+
+/* ---------------- Services Part ------------------------------------ */
+
+.services-content{
+  background: #f1f1f1;
+  padding: 60px 15px 20px;
+  position: relative;
+  transition: .4s;
+}
+.services-icon{
+  width: 90px;
+  height: 90px;
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  line-height: 70px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 10px double #fff;
+  outline: 3px solid #fff;
+  transition: .5s;
+}
+.services-content:hover .services-icon{
+background: var(--secondary_color);
+}
+.services-content:hover{
+  box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+}
+
+
+
+/*  ------------ Portfolio Part --------------------- */
+
+.portfolio-img{
+  position: relative;
+}
+.portfolio-img-overlay{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: .6s;
+}
+.portfolio-img-overlay a{
+  width: 50px;
+  height: 50px;
+  background-color: var(--secondary_color);
+  color: #fff;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  font-size: 20px;
+}
+.portfolio-img:hover .portfolio-img-overlay{
+  opacity: 1;
+}
+
+
+/* -------------------- Team Part ------------------------------ */
+
+.team-img{
+  position: relative;
+  transition: .4s;
+}
+.team-img-hover{
+  width: 35%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  position: absolute;
+  top: 0;
+  left: 65%;
+  opacity: 0;
+  visibility: hidden;
+}
+.team-img-hover i{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  border: 2px solid white;
+  transition: .5s;
+}
+.team-img-hover i:hover{
+  background-color: var(--secondary_color);
+  border: 0;
+}
+.team-img:hover .team-img-hover{
+  opacity: 1;
+  visibility: visible;
+}
+.team-img:hover{
+  box-shadow: rgba(0, 0, 0, 0.4) 0 2px 8px 0;
+}
+.team-img:hover ~ h4{
+  color: var(--secondary_color);
+}
+.team-content h4{
+  margin: 8px 0 0;
+}
+.team-content p{
+  font-family: 'Oswald', sans-serif;
+}
+
+
+/* -------------------- Testimonial Part ----------------------- */
+
+.testimonial-content{
+  margin: 50px 0;
+  padding: 20px;
+  background-color: #f1f1f1;
+  position: relative;
+}
+.testimonial-content::before{
+  content: '';
+  height: 40px;
+  width: 40px;
+  background-color: #f1f1f1;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  z-index: -1;
+}
+
+.testimonial-content p{
+  font-family: 'Oswald', sans-serif;
+  line-height: 28px;
+  color: #555;
+}
+.testimonial-content ul li i{
+  color: var(--secondary_color);
+}
+
+/* ------------- Contact Part ---------------------- */
+.contact-part{
+  margin-top: 20px;
+  background-color: #353535;
+  padding: 15px 0;
+}
+.contact-content p{
+  color: #f1f1f1;
+  line-height: 30px;
+}
+.contact-head h5{
+  padding-top: 10px;
+  color: #fff;
+}
+.contact-content ul li a{
+  color: #f1f1f1;
+  padding: 0 0 18px;
+  display: block;
+  transition: .4s;
+}
+.contact-content ul li a:hover{
+  color: var(--secondary_color);
+}
+.contact-content-icon{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary_color);
+  color: #fff;
+  font-size: 18px;
+}
+/* --------------- Contact Part End ------------------ */
+
+
+
+/* ---------------- footer Part Start ------------------ */
+.footer-part{
+  background-color: #555;
+  margin-top: 3px;
+}
+.footer-content{
+  text-align: center;
+  color: #f1f1f1;
+  padding: 16px 0;
+}
+.footer-content a{
+  color: var(--secondary_color);
+}
+/* ---------------- footer Part End ------------------ */
