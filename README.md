@@ -1,1 +1,1 @@
-# psd to html5 landing page design
+# psd to html5 landing page design using Bootstrap.
